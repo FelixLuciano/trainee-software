@@ -28,7 +28,7 @@ def main():
                     speed = 0.0
 
                 if speed > 100:
-                    speed = 0.0
+                    speed = 100.0
 
                 now = datetime.utcnow()
                 speedPoint = (
