@@ -1,6 +1,6 @@
 from datetime import datetime
-from random import random
-from time import sleep
+import random
+import time
 
 import influxdb_client as db
 from influxdb_client import InfluxDBClient
@@ -16,18 +16,17 @@ BUCKET = "trainee"
 def main():
     acceleration = 0.0
     speed = 0.0
-    interval = 0.2
+    interval = 1.0
 
     with InfluxDBClient(url=URL, token=TOKEN, org=ORG) as client:
         with client.write_api(write_options=ASYNCHRONOUS) as write_client:
             while True:
                 speed += acceleration * interval
-                acceleration += (random() * 2 - 1) / 10
+                acceleration = random.uniform(-1.0, 1.0)
 
                 if speed < 0.0:
                     speed = 0.0
-
-                if speed > 100:
+                elif speed > 100:
                     speed = 100.0
 
                 now = datetime.utcnow()
@@ -45,8 +44,8 @@ def main():
                 if not response.successful():
                     raise Exception("Request not successful!")
 
-                print(f"{now.time()}: {speed:+07.2f} km/h\r", end="")
-                sleep(interval)
+                print(f"{now.time()}: {speed:+07.2f} km/h ({acceleration:+.2f})\r", end="")
+                time.sleep(interval)
 
 
 if __name__ == "__main__":
