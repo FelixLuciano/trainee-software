@@ -1,8 +1,9 @@
 version: '3'
-
+name: trainee-software_projeto-3
 services: 
   influxdb:
     image: bitnami/influxdb:latest
+    container_name: db
     environment:
       - INFLUXDB_HTTP_AUTH_ENABLED=false
       - INFLUXDB_ADMIN_USER_PASSWORD=password123
@@ -13,14 +14,15 @@ services:
     ports:
       - 8086:8086
     volumes:
-      - 'influxdb_data:/bitnami/influxdb'
+      - 'db_data:/bitnami/influxdb'
   grafana:
     image: bitnami/grafana:8
+    container_name: client
     ports:
       - '3000:3000'
     environment:
       GF_SECURITY_ADMIN_PASSWORD: "bitnami"
 
 volumes:
-  influxdb_data:
+  db_data:
     driver: local
