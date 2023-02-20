@@ -1,3 +1,6 @@
+#!./env/bin/python
+#!python
+
 from datetime import datetime
 import random
 import time
@@ -28,13 +31,13 @@ def main():
             while True:
                 # Itera a velocidade
                 speed += acceleration * interval
-                acceleration = random.uniform(-1.0, 1.0)
+                acceleration = random.uniform(-1.0, 2.0)
 
                 # Limita a velocidade
                 if speed < 0.0:
                     speed = 0.0
-                elif speed > 100:
-                    speed = 100.0
+                elif speed > 70.0:
+                    speed = 70.0
 
                 # Obtém o timestamp atual
                 now = datetime.utcnow()
