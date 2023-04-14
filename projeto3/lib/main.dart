@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
 
     const body = Center(
       child: Text(
-        'Projeto #3',
+        'Projetoooooooooooooooor #3',
         style: TextStyle(fontSize: 24),
       ),
     );
