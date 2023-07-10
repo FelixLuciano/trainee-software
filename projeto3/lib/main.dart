@@ -1,19 +1,22 @@
-// Import de pacote de widgets Material
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-// Define a função principal
+import 'routes/home/home.dart';
+import 'routes/clicker/clicker.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-  static const title = 'Trainee Insper Mileage';
+  MyApp({Key? key}) : super(key: key);
+
+  late SharedPreferences prefs;
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData theme = ThemeData(
+
+    final theme = ThemeData(
       primarySwatch: const MaterialColor(0xFFFF440D, {
         50: Color(0xFFFFE9E2),
         100: Color(0xFFFFC7B6),
@@ -28,30 +31,13 @@ class MyApp extends StatelessWidget {
       }),
     );
 
-    AppBar appbar = AppBar(
-      leading: const Icon(
-        CupertinoIcons.person_circle_fill,
-      ),
-      title: const Text(
-        MyApp.title,
-        style: TextStyle(fontWeight: FontWeight.bold),
-      ),
-    );
-
-    const body = Center(
-      child: Text(
-        'Projeto #3',
-        style: TextStyle(fontSize: 24),
-      ),
-    );
-
     return MaterialApp(
       theme: theme,
-      title: MyApp.title,
-      home: Scaffold(
-        appBar: appbar,
-        body: body,
-      ),
+      title: 'Trainee Insper Mileage',
+      routes: {
+        '/': (context) => Home(theme: theme),
+        '/clicker': (context) => Clicker(theme: theme),
+      },
     );
   }
 }
