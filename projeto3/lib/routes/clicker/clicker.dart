@@ -91,14 +91,17 @@ class ClickerState extends State<Clicker> {
       body: Center(
         child: Gauge(cps: cps, theme: widget.theme),
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        icon: const Icon(Icons.ads_click),
-        
-        shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(20.0))
-        ),
-        label: const Text('CLIQUE'),
-        onPressed: () => click(context),
+      floatingActionButton: SizedBox(
+        width: 256,
+        height: 64,
+        child: FloatingActionButton.extended(
+          icon: const Icon(Icons.ads_click),   
+          shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(20.0))
+          ),
+          label: const Text('CLIQUE'),
+          onPressed: () => click(context),
+        )
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
