@@ -13,22 +13,22 @@
 
 Veja como realizar as atividades na [página oficial](https://trainee.inspermileage.com/software).
 
-## Sites com Next.js e Prismic CMS
+## Sites com Next.js
 
-Lorem ipsum dolor sit amet imperdiet sanctus et lorem ipsum duo dolores aliquip molestie lorem eum duo. Elitr iriure clita magna sit sit dolores praesent ea. Aliquam lobortis et amet kasd ut praesent ea gubergren sed minim amet ipsum. Tempor sit gubergren. Sed dolor et amet qui amet et voluptua justo kasd eros sea vulputate facilisi dolore et sanctus stet. Sed vero et et nonumy consequat takimata eirmod dolor nonumy sadipscing tempor clita invidunt erat takimata. Sit ut sit accusam feugiat ut et takimata ipsum qui est sea clita adipiscing clita. Dolor lorem dolore clita diam et rebum et sanctus duo eirmod.
+Next.js é um framework para desenvolvimento de aplicativos web escaláveis e de
+alta performance baseado em React.
 
-[Ver instruções](https://trainee.inspermileage.com/software/projeto1)
+[Ver instruções](https://trainee.inspermileage.com/software/projeto-1)
 
 
 ## Aplicativo com Flutter
 
-Lorem ipsum dolor sit amet imperdiet sanctus et lorem ipsum duo dolores aliquip molestie lorem eum duo. Elitr iriure clita magna sit sit dolores praesent ea. Aliquam lobortis et amet kasd ut praesent ea gubergren sed minim amet ipsum. Tempor sit gubergren. Sed dolor et amet qui amet et voluptua justo kasd eros sea vulputate facilisi dolore et sanctus stet. Sed vero et et nonumy consequat takimata eirmod dolor nonumy sadipscing tempor clita invidunt erat takimata. Sit ut sit accusam feugiat ut et takimata ipsum qui est sea clita adipiscing clita. Dolor lorem dolore clita diam et rebum et sanctus duo eirmod.
+O InfluxDB é uma solução de banco de dados projetada especificamente para
+armazenar e consultar dados temporais, como métricas de sensores e eventos de
+log. A visualização desses dados pode ser feita usando o Grafana, uma plataforma
+de análise e visualização de dados que permite criar painéis personalizados para
+monitorar e analisar esses dados ao longo do tempo. Juntos, o InfluxDB e o
+Grafana fornecem uma solução poderosa para armazenar, analisar e visualizar
+dados temporais.
 
-[Ver instruções](https://trainee.inspermileage.com/software/projeto2)
-
-
-## Banco de dados tempotal com InfluxBD e visualização com Grafana
-
-Lorem ipsum dolor sit amet imperdiet sanctus et lorem ipsum duo dolores aliquip molestie lorem eum duo. Elitr iriure clita magna sit sit dolores praesent ea. Aliquam lobortis et amet kasd ut praesent ea gubergren sed minim amet ipsum. Tempor sit gubergren. Sed dolor et amet qui amet et voluptua justo kasd eros sea vulputate facilisi dolore et sanctus stet. Sed vero et et nonumy consequat takimata eirmod dolor nonumy sadipscing tempor clita invidunt erat takimata. Sit ut sit accusam feugiat ut et takimata ipsum qui est sea clita adipiscing clita. Dolor lorem dolore clita diam et rebum et sanctus duo eirmod.
-
-[Ver instruções](https://trainee.inspermileage.com/software/projeto3)
+[Ver instruções](https://trainee.inspermileage.com/software/projeto-2)
