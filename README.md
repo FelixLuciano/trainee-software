@@ -21,7 +21,7 @@ alta performance baseado em React.
 [Ver instruções](https://trainee.inspermileage.com/software/projeto-1)
 
 
-## Aplicativo com Flutter
+## ## Banco de dados tempotal com InfluxBD e visualização com Grafana
 
 O InfluxDB é uma solução de banco de dados projetada especificamente para
 armazenar e consultar dados temporais, como métricas de sensores e eventos de
